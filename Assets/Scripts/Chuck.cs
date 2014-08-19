@@ -5,12 +5,12 @@ using System.Threading;
 
 public class Chuck : MonoBehaviour {
 
-	private float CHUCK_WIDTH = 120f;
-	private float CHUCK_HEIGHT = 160f;
+	private float CHUCK_WIDTH = 58f;
+	private float CHUCK_HEIGHT = 40f;
 
 	public System.Guid Guid;
 	private UIRoot _uiRoot = null;
-	public Chuck[] _children = new Chuck[2];
+	public Chuck[] _children = new Chuck[1];
 
 	public System.Guid actorGuid;
 	public int actionGuid;
@@ -22,24 +22,6 @@ public class Chuck : MonoBehaviour {
 	public UIButton startButton;
 
 	public bool _isStart = false;
-
-	public void OnToggleStart ()
-	{
-		_isStart = !_isStart;
-		UpdateStartIcon();
-	}
-
-	private void UpdateStartIcon()
-	{
-		if (_isStart) 
-		{
-			startButton.normalSprite = "1408105883_traffic_lights_green";
-		}
-		else
-		{
-			startButton.normalSprite = "1408105883_traffic_lights_red";
-		}
-	}
 
 	public void SetAction(System.Guid actorID, int actionID)
 	{
@@ -104,18 +86,11 @@ public class Chuck : MonoBehaviour {
 			}
 		}
 
-		// 3. run bottom chuck
+		// 3. run next chuck
 		if (_children [0] != null) {
 //			Thread thread = new Thread (new ThreadStart (_children [0].Execute));
 //			thread.Start ();
 			_children [0].Execute ();
-		}
-
-		// 4. if end this, run right chuck
-		if (_children [1] != null) {
-//			Thread thread = new Thread (new ThreadStart (_children [1].Execute));
-//			thread.Start ();
-			_children [1].Execute ();
 		}
 	}
 
@@ -125,7 +100,6 @@ public class Chuck : MonoBehaviour {
 		ChuckManager.Instance.Add(this);
 		if (UIRoot.list.Count > 0)
 			_uiRoot = UIRoot.list[0];
-		UpdateStartIcon ();
 	}
 	
 	// Update is called once per frame
