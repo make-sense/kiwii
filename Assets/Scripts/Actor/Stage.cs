@@ -67,12 +67,12 @@ public class Stage : Actor {
 		{
 			switch (actor.charactorType)
 			{
-			case Actor.eCharactor.BUTTY:
+//			case Actor.eCharactor.BUTTY:
 //				((Butty)actor).Refresh ();
-				break;
-			case Actor.eCharactor.BULBY:
+//				break;
+//			case Actor.eCharactor.BULBY:
 //				((Bulby)actor).Refresh ();
-				break;
+//				break;
 			}
 		}
 

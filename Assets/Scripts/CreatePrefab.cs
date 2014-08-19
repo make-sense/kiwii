@@ -28,18 +28,23 @@ public class CreatePrefab : MonoBehaviour {
 			break;
 		}
 		UILabel label = instantiatedGameObject.GetComponentInChildren<UILabel> () as UILabel;
+		Chuck chuck = instantiatedGameObject.GetComponentInChildren<Chuck> () as Chuck;
 		switch (positionOfPrefab.name)
 		{
 		case "ChuckGo":
+			chuck.actionGuid = 100;
 			label.text = "->";
 			break;
 		case "ChuckBack":
+			chuck.actionGuid = 200;
 			label.text = "<-";
 			break;
 		case "ChuckJump":
+			chuck.actionGuid = 300;
 			label.text = "j";
 			break;
 		case "ChuckSlide":
+			chuck.actionGuid = 400;
 			label.text = "s";
 			break;
 		}

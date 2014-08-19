@@ -25,7 +25,8 @@ public class Kiwii : Actor {
 
 	// Use this for initialization
 	void Start () {
-	
+		base.Start ();
+		base.charactorType = eCharactor.KIWII;
 	}
 	
 	// Update is called once per frame

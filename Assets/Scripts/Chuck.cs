@@ -68,22 +68,9 @@ public class Chuck : MonoBehaviour {
 		ActionData actionData = ActionManager.Instance.GetActionData(actionGuid);
 		if (actionData != null) 
 		{
-			Actor actor = ActorManager.Instance.Get(actorGuid);
-			if (actor != null)
-			{
-				if (actionData.Type == eActionType.Input) {
-					bool resultValue = false;
-					MethodInfo methodInfo = actor.GetType().GetMethod(actionData.CallFunctionName);
-					object thisvalue = methodInfo.Invoke(actor, null);
-					Debug.Log ("Action:" + actionData.CallFunctionName + "=>" + thisvalue.ToString ());
-					if (thisvalue.ToString() == "False")
-						return;
-				}
-				else{
-					actor.gameObject.BroadcastMessage(actionData.CallFunctionName);
-					Debug.Log ("Action:" + actionData.CallFunctionName);
-				}
-			}
+			Kiwii kiwii = ActorManager.Instance.Get (Actor.eCharactor.KIWII) as Kiwii;
+			kiwii.gameObject.BroadcastMessage(actionData.CallFunctionName);
+			Debug.Log ("Action:" + actionData.CallFunctionName);
 		}
 
 		// 3. run next chuck

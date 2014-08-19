@@ -2047,6 +2047,7 @@ GameObject:
   - 65: {fileID: 466946097}
   - 54: {fileID: 466946101}
   - 114: {fileID: 466946100}
+  - 114: {fileID: 466946102}
   m_Layer: 8
   m_Name: Rule3
   m_TagString: Chuck
@@ -2187,6 +2188,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &466946102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466946095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ec21344136890428610e3fdf1a4108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _children:
+  - {fileID: 0}
+  actionGuid: 0
+  startButton: {fileID: 0}
+  _isStart: 0
 --- !u!1 &514053623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c978d5e45c49bb469182b967874349c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionManager: {fileID: 1439521858}
 --- !u!1 &777504731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,6 +3038,7 @@ GameObject:
   - 65: {fileID: 803769531}
   - 54: {fileID: 803769530}
   - 114: {fileID: 803769529}
+  - 114: {fileID: 803769528}
   m_Layer: 8
   m_Name: Kiwii
   m_TagString: Chuck
@@ -3046,6 +3063,21 @@ Transform:
   - {fileID: 1097868388}
   m_Father: {fileID: 1336106623}
   m_RootOrder: 3
+--- !u!114 &803769528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803769526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b844dcba9b37b4a09abec22a985f36cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyTag: 
+  charactorType: 0
+  ActorName: 
+  Pos: {x: 0, y: 0, z: 0}
 --- !u!114 &803769529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4214,6 +4246,7 @@ GameObject:
   - 65: {fileID: 1238333614}
   - 54: {fileID: 1238333618}
   - 114: {fileID: 1238333617}
+  - 114: {fileID: 1238333619}
   m_Layer: 8
   m_Name: Rule2
   m_TagString: Chuck
@@ -4354,6 +4387,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1238333619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238333612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ec21344136890428610e3fdf1a4108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _children:
+  - {fileID: 0}
+  actionGuid: 0
+  startButton: {fileID: 0}
+  _isStart: 0
 --- !u!1 &1243629582
 GameObject:
   m_ObjectHideFlags: 0
@@ -4718,6 +4767,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1336106623}
+  - 114: {fileID: 1336106624}
   m_Layer: 8
   m_Name: Stage
   m_TagString: Untagged
@@ -4741,6 +4791,21 @@ Transform:
   - {fileID: 803769527}
   m_Father: {fileID: 1688760404}
   m_RootOrder: 2
+--- !u!114 &1336106624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336106622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3496ce4fa2948104fba24c7010e75c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyTag: 
+  charactorType: 1
+  ActorName: 
+  Pos: {x: 0, y: 0, z: 0}
 --- !u!1 &1369226892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,6 +5587,7 @@ GameObject:
   - 65: {fileID: 1711461792}
   - 54: {fileID: 1711461796}
   - 114: {fileID: 1711461795}
+  - 114: {fileID: 1711461797}
   m_Layer: 8
   m_Name: Rule1
   m_TagString: Chuck
@@ -5662,6 +5728,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1711461797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1711461790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ec21344136890428610e3fdf1a4108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _children:
+  - {fileID: 0}
+  actionGuid: 0
+  startButton: {fileID: 0}
+  _isStart: 0
 --- !u!1 &1768342325
 GameObject:
   m_ObjectHideFlags: 0

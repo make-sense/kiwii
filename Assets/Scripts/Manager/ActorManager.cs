@@ -33,9 +33,17 @@ public class ActorManager : MonoBehaviour {
 		_actors.Remove(actor);
 	}
 
-	public Actor Get(System.Guid guid) {
+	public Actor Get (System.Guid guid) {
 		foreach (Actor actor in _actors) {
 			if (actor.Guid == guid)
+				return actor;
+		}
+		return null;
+	}
+
+	public Actor Get (Actor.eCharactor type) {
+		foreach (Actor actor in _actors) {
+			if (actor.charactorType == type)
 				return actor;
 		}
 		return null;

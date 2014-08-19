@@ -7,9 +7,7 @@ public class Actor : MonoBehaviour {
 	public enum eCharactor {
 		NONE,
 		STAGE,
-		BUTTY,
-		CALCHY,
-		BULBY,
+		KIWII,
 	};
 	public eCharactor charactorType = eCharactor.NONE;
 

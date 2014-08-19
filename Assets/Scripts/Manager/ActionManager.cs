@@ -8,7 +8,7 @@ public class MsAction {
 
 public class ActionManager : MonoBehaviour {
 
-	public Transform actionManager;
+	Transform actionManager;
 
 	public ActionData GetActionData(int guid)
 	{
@@ -28,7 +28,7 @@ public class ActionManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		actionManager = GameObject.Find ("ActionManager").transform;
 	}
 	
 	// Update is called once per frame
