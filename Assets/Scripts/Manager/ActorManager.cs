@@ -7,14 +7,16 @@ public class ActorManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject stageGameObject = GameObject.Find ("Stage");
-		if (stageGameObject != null) 
+		try 
 		{
+			GameObject stageGameObject = GameObject.Find ("Stage");
 			Stage stage = stageGameObject.GetComponentInChildren<Stage> () as Stage;
-			if (stage != null)
-			{
-				Add (stage);
-			}
+			Add (stage);
+			Kiwii kiwii = stageGameObject.GetComponentInChildren<Kiwii> () as Kiwii;
+			Add (kiwii);
+		}
+		catch (KeyNotFoundException e) {
+			Debug.Log (e.ToString ());
 		}
 	}
 	

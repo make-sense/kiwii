@@ -9,7 +9,7 @@ public class Chuck : MonoBehaviour {
 	private float CHUCK_HEIGHT = 40f;
 
 	public System.Guid Guid;
-	private UIRoot _uiRoot = null;
+	GameObject chuckStage = null;
 	public Chuck[] _children = new Chuck[1];
 
 	public System.Guid actorGuid;
@@ -98,14 +98,9 @@ public class Chuck : MonoBehaviour {
 	void Start () {
 		Guid = System.Guid.NewGuid ();
 		ChuckManager.Instance.Add(this);
-		if (UIRoot.list.Count > 0)
-			_uiRoot = UIRoot.list[0];
+		chuckStage = GameObject.Find ("ChuckStage");
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	}
-
 	void OnPress (bool isPressed) 
 	{
 		Debug.Log ("Chuck OnPress:"+Guid.ToString ());
@@ -115,6 +110,7 @@ public class Chuck : MonoBehaviour {
 	{
 		if (other.tag == "Chuck") 
 		{
+			Debug.Log ("Destroy " + other.name);
 			Vector3 srcPos = getGlobalPosition(this.transform);
 			Vector3 dstPos = getGlobalPosition(other.transform);
 			if (isRightEdge(srcPos, dstPos))
@@ -123,18 +119,10 @@ public class Chuck : MonoBehaviour {
 				this.transform.localPosition = new Vector3(CHUCK_WIDTH, 0);
 				Chuck rootChuck = other.GetComponentInChildren<Chuck> () as Chuck;
 				if (rootChuck != null)
-					rootChuck._children[1] = this;
-			}
-			else if (isBottomEdge(srcPos, dstPos))
-	        {
-				this.transform.parent = other.transform;
-				this.transform.localPosition = new Vector3(0, -CHUCK_HEIGHT);
-				Chuck rootChuck = other.GetComponentInChildren<Chuck> () as Chuck;
-				if (rootChuck != null)
 					rootChuck._children[0] = this;
 			}
 		}
-		else if (other.tag == "ChuckStack")
+		else if (other.tag == "Destroy")
 		{
 			Debug.Log ("Destroy " + gameObject.name);
 			ChuckManager.Instance.Remove(this);
@@ -148,7 +136,7 @@ public class Chuck : MonoBehaviour {
 		    return;
 
 		if (isChuckSeparated(this.transform))
-			this.transform.parent = _uiRoot.transform;
+			this.transform.parent = chuckStage.transform;
 	}
 
 	void OnDragDropRelease(GameObject surface)
@@ -163,17 +151,6 @@ public class Chuck : MonoBehaviour {
 		    src.x < dst.x + CHUCK_WIDTH &&
 		    src.y > dst.y - CHUCK_HEIGHT/2 &&
 		    src.y < dst.y + CHUCK_HEIGHT)
-			return true;
-		return false;
-	}
-
-	private bool isBottomEdge(Vector3 src, Vector3 dst)
-	{
-//		Debug.Log ("isBottomEdge");
-		if (src.x > dst.x &&
-		    src.x < dst.x + CHUCK_WIDTH/2 &&
-		    src.y > dst.y - CHUCK_HEIGHT &&
-		    src.y < dst.y - CHUCK_HEIGHT/2)
 			return true;
 		return false;
 	}
@@ -212,7 +189,7 @@ public class Chuck : MonoBehaviour {
 		if (transform.parent == null)
 			return true;
 
-		if (!transform.parent.name.Contains("Chuck"))
+		if (transform.parent.name.Contains("ChuckStage"))
 			return true;
 		return false;
 	}
@@ -222,15 +199,6 @@ public class Chuck : MonoBehaviour {
 		if (isRoot (transform))
 			return false;
 		if (transform.localPosition.x > CHUCK_WIDTH/2)
-			return true;
-		return false;
-	}
-
-	private bool isBottomChild(Transform transfor)
-	{
-		if (isRoot (transform))
-			return false;
-		if (transform.localPosition.y < -CHUCK_HEIGHT/2)
 			return true;
 		return false;
 	}
