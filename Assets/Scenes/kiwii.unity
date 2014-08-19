@@ -697,7 +697,7 @@ Transform:
   - {fileID: 1688760404}
   - {fileID: 1354284946}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!54 &163140584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2243,7 +2243,7 @@ Transform:
   m_Children:
   - {fileID: 753264507}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &535971890
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3204,38 @@ Prefab:
     - target: {fileID: 400016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mSpriteName
+      value: 0002_1j-block
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mText
+      value: J
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mDepth
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400014, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: mFontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
+      propertyPath: hoverSprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
@@ -4830,7 +4862,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0002_1j-block-on
+  mSpriteName: 0002_1j-block
   mFillCenter: 1
 --- !u!1 &1365943639
 GameObject:
@@ -4970,11 +5002,11 @@ MonoBehaviour:
     relative: 1
     absolute: -4
   updateAnchors: 1
-  mColor: {r: 0, g: 0, b: 0, a: .737254918}
+  mColor: {r: 1, g: 1, b: 1, a: .737254918}
   mPivot: 4
   mWidth: 50
   mHeight: 32
-  mDepth: 5
+  mDepth: 11
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -4982,8 +5014,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 
-  mFontSize: 20
+  mText: J
+  mFontSize: 30
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
