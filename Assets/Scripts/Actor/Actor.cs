@@ -15,12 +15,11 @@ public class Actor : MonoBehaviour {
 	public string ActorName;
 	public Vector3 Pos;
 
-	public void Start ()
+	void Start ()
 	{
-		Guid = System.Guid.NewGuid ();
 	}
 
-	public void Refresh ()
+	public virtual void Refresh ()
 	{
 		Debug.Log ("Actor::Refresh");
 	}

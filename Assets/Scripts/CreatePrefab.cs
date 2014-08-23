@@ -4,6 +4,7 @@ using System.Collections;
 public class CreatePrefab : MonoBehaviour {
 	public GameObject ChuckStage;
 	public GameObject positionOfPrefab;
+	public GameObject DestRoot;
 	public GameObject prefab;
 	private static Vector3 _lastPosition;
 

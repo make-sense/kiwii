@@ -23,10 +23,14 @@ public class Kiwii : Actor {
 		Debug.Log ("Slide");
 	}
 
+	public override void Refresh ()
+	{
+	}
+
 	// Use this for initialization
 	void Start () {
-		base.Start ();
-		base.charactorType = eCharactor.KIWII;
+		Guid = System.Guid.NewGuid ();
+		charactorType = eCharactor.KIWII;
 	}
 	
 	// Update is called once per frame

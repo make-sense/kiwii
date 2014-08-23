@@ -51,11 +51,11 @@ public class Stage : Actor {
 
 	// Use this for initialization
 	void Start () {
-		base.Start ();
-		base.charactorType = eCharactor.STAGE;
+		Guid = System.Guid.NewGuid ();
+		charactorType = eCharactor.STAGE;
 	}
 	
-	public void Refresh () 
+	public override void Refresh ()
 	{
 	}
 
@@ -65,28 +65,19 @@ public class Stage : Actor {
 		BetterList<Actor> actors = ActorManager.Instance.GetActors ();
 		foreach (Actor actor in actors) 
 		{
-			switch (actor.charactorType)
-			{
-//			case Actor.eCharactor.BUTTY:
-//				((Butty)actor).Refresh ();
-//				break;
-//			case Actor.eCharactor.BULBY:
-//				((Bulby)actor).Refresh ();
-//				break;
-			}
+			actor.Refresh ();
 		}
 
-		if (IsRun ()) 
-		{
-			BetterList<Chuck> chucks = ChuckManager.Instance.GetChucks ();
-			foreach (Chuck chuck in chucks)
-			{
-				if (chuck.IsRoot ())
-//				if (chuck._isStart)
-				{
-					chuck.Execute ();
-				}
-			}
-		}
+//		if (IsRun ()) 
+//		{
+//			BetterList<Chuck> chucks = ChuckManager.Instance.GetChucks ();
+//			foreach (Chuck chuck in chucks)
+//			{
+//				if (chuck.IsRoot ())
+//				{
+//					chuck.Execute ();
+//				}
+//			}
+//		}
 	}
 }
