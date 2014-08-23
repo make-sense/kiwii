@@ -58,6 +58,16 @@ public class Chuck : MonoBehaviour {
 			kiwii.gameObject.BroadcastMessage(actionData.CallFunctionName);
 			Debug.Log ("Action:" + actionData.CallFunctionName);
 		}
+
+		switch (this.name) 
+		{
+		case "Rule1":
+		case "Rule2":
+		case "Rule3":
+			timeLength = 100;
+			break;
+		}
+
 		DateTime begin = DateTime.Now;
 		while (true) 
 		{

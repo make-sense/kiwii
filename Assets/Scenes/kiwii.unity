@@ -613,7 +613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 93446499}
-  DestRoot: {fileID: 0}
   prefab: {fileID: 100016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
 --- !u!114 &93446507
 MonoBehaviour:
@@ -1113,7 +1112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 0}
   positionOfPrefab: {fileID: 0}
-  DestRoot: {fileID: 0}
   prefab: {fileID: 0}
 --- !u!114 &209329288
 MonoBehaviour:
@@ -2206,8 +2204,6 @@ MonoBehaviour:
   _children:
   - {fileID: 0}
   actionGuid: 0
-  startButton: {fileID: 0}
-  _isStart: 0
 --- !u!114 &466946103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2221,7 +2217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 466946095}
-  DestRoot: {fileID: 1336106622}
   prefab: {fileID: 100004, guid: 825f56d33bbfb4d6ca6e726d7e512dd1, type: 2}
 --- !u!114 &466946104
 MonoBehaviour:
@@ -2654,7 +2649,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 626111131}
-  DestRoot: {fileID: 0}
   prefab: {fileID: 100016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
 --- !u!114 &626111139
 MonoBehaviour:
@@ -3902,7 +3896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 1111737100}
-  DestRoot: {fileID: 0}
   prefab: {fileID: 100016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
 --- !u!114 &1111737108
 MonoBehaviour:
@@ -4097,7 +4090,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 1136352832}
-  DestRoot: {fileID: 0}
   prefab: {fileID: 100016, guid: f3522052173b54589a191c3cc64c09d7, type: 2}
 --- !u!114 &1136352840
 MonoBehaviour:
@@ -4450,8 +4442,6 @@ MonoBehaviour:
   _children:
   - {fileID: 0}
   actionGuid: 0
-  startButton: {fileID: 0}
-  _isStart: 0
 --- !u!114 &1238333620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4465,7 +4455,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 1238333612}
-  DestRoot: {fileID: 1336106622}
   prefab: {fileID: 100004, guid: b30fce685e19e4d8ab224e2c87caea29, type: 2}
 --- !u!114 &1238333621
 MonoBehaviour:
@@ -5833,8 +5822,6 @@ MonoBehaviour:
   _children:
   - {fileID: 0}
   actionGuid: 0
-  startButton: {fileID: 0}
-  _isStart: 0
 --- !u!114 &1711461798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5848,7 +5835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChuckStage: {fileID: 464517156}
   positionOfPrefab: {fileID: 1711461790}
-  DestRoot: {fileID: 1336106622}
   prefab: {fileID: 100004, guid: 530bbc4f348724bab9e96b1c11564373, type: 2}
 --- !u!114 &1711461799
 MonoBehaviour:
