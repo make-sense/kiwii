@@ -27,6 +27,22 @@ public class Kiwii : Actor {
 	{
 	}
 
+	void OnTriggerEnter(Collider other) 
+	{
+		switch (other.tag)
+		{
+		case "Rule1":
+		case "Rule2":
+		case "Rule3":
+			// Execute Rule1
+			Chuck chuck = ChuckManager.Instance.Get (other.tag);
+			if (chuck != null)
+				chuck.Execute ();
+			Debug.Log (other.tag);
+			break;
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
 		Guid = System.Guid.NewGuid ();

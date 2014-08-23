@@ -47,7 +47,7 @@ GameObject:
   - 114: {fileID: 11400002}
   m_Layer: 8
   m_Name: Rule1
-  m_TagString: Chuck
+  m_TagString: Rule1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

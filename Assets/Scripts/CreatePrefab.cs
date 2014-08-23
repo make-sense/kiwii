@@ -13,7 +13,7 @@ public class CreatePrefab : MonoBehaviour {
 		Transform _transform = ChuckStage.transform.FindChild(positionOfPrefab.name);
 		if (_transform != null) {
 			_lastPosition = _transform.localPosition;
-			Debug.Log(_transform.name + ":" + _lastPosition.ToString());
+//			Debug.Log(_transform.name + ":" + _lastPosition.ToString());
 		}
 	}
 	

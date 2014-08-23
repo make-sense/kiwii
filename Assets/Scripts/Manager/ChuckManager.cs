@@ -35,7 +35,15 @@ public class ChuckManager : MonoBehaviour {
 		}
 		return null;
 	}
-	
+
+	public Chuck Get(string name) {
+		foreach (Chuck chuck in _chucks) {
+			if (chuck.name == name)
+				return chuck;
+		}
+		return null;
+	}
+
 	public BetterList<Chuck> GetChucks() {
 		return _chucks;
 	}
