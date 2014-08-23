@@ -69,7 +69,6 @@ public class Kiwii : Actor {
 		case "Rule1":
 		case "Rule2":
 		case "Rule3":
-		case "Feather":
 			// Execute Rule1
 			Chuck chuck = ChuckManager.Instance.Get (other.gameObject.tag);
 			if (chuck != null){
@@ -77,6 +76,10 @@ public class Kiwii : Actor {
 				isExe = false;
 				chuck.Execute ();
 			}
+			Destroy(other.gameObject);
+			Debug.Log (other.gameObject.tag);
+			break;
+		case "Feather":
 			Destroy(other.gameObject);
 			Debug.Log (other.gameObject.tag);
 			break;
