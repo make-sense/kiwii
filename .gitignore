@@ -11,3 +11,6 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+
+# Android program file
+*.apk
