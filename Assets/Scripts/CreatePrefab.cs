@@ -20,25 +20,25 @@ public class CreatePrefab : MonoBehaviour {
 	{
 		GameObject instantiatedGameObject = NGUITools.AddChild(this.transform.parent.gameObject, prefab);
 		instantiatedGameObject.transform.localPosition = _lastPosition;
-		UILabel label = instantiatedGameObject.GetComponentInChildren<UILabel> () as UILabel;
+		UIButton button = instantiatedGameObject.GetComponentInChildren<UIButton> () as UIButton;
 		Chuck chuck = instantiatedGameObject.GetComponentInChildren<Chuck> () as Chuck;
 		switch (positionOfPrefab.name)
 		{
 		case "ChuckGo":
 			chuck.actionGuid = 100;
-			label.text = "->";
+			button.normalSprite = "kiwii_chuck_go";
 			break;
 		case "ChuckBack":
 			chuck.actionGuid = 200;
-			label.text = "<-";
+			button.normalSprite = "kiwii_chuck_back";
 			break;
 		case "ChuckJump":
 			chuck.actionGuid = 300;
-			label.text = "j";
+			button.normalSprite = "kiwii_chuck_jump";
 			break;
 		case "ChuckSlide":
 			chuck.actionGuid = 400;
-			label.text = "s";
+			button.normalSprite = "kiwii_chuck_slide";
 			break;
 		}
 	}

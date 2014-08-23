@@ -6,8 +6,8 @@ using System.Threading;
 
 public class Chuck : MonoBehaviour {
 
-	private float CHUCK_WIDTH = 58f;
-	private float CHUCK_HEIGHT = 40f;
+	private float CHUCK_WIDTH = 50f;
+	private float CHUCK_HEIGHT = 80f;
 
 	public System.Guid Guid;
 	GameObject chuckStage = null;

@@ -232,8 +232,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   actionGuid: 0
-  startButton: {fileID: 0}
-  _isStart: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -477,13 +475,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 58
-  mHeight: 40
+  mWidth: 60
+  mHeight: 80
   mDepth: 10
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.45000005
+  aspectRatio: .75
   mType: 3
   mFillDirection: 4
   mFillAmount: 1
@@ -495,7 +493,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0002_1j-block
+  mSpriteName: kiwii_chuck_jump
   mFillCenter: 1
 --- !u!114 &11400018
 MonoBehaviour:

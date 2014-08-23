@@ -303,27 +303,27 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: 0033_l
+      value: kiwii_chuck_back
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: aspectRatio
-      value: 1
+      value: .75
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.x
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mHeight
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.y
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -504,7 +504,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 105, y: 105, z: 0}
+  m_Size: {x: 60, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &93446502
 MonoBehaviour:
@@ -563,13 +563,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 105
-  mHeight: 105
+  mWidth: 60
+  mHeight: 80
   mDepth: 10
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: .75
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0033_l
+  mSpriteName: kiwii_chuck_back
   mFillCenter: 1
 --- !u!54 &93446504
 Rigidbody:
@@ -1204,27 +1204,27 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: 0032_jump
+      value: kiwii_chuck_jump
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: aspectRatio
-      value: 1
+      value: .75
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.x
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mHeight
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.y
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -1744,8 +1744,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .737254918}
   mPivot: 4
-  mWidth: 97
-  mHeight: 97
+  mWidth: 52
+  mHeight: 72
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1822,27 +1822,27 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: 0031_slide
+      value: kiwii_chuck_slide
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: aspectRatio
-      value: 1
+      value: .75
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.x
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mHeight
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.y
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -2458,27 +2458,27 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: 0034_r
+      value: kiwii_chuck_go
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: aspectRatio
-      value: 1
+      value: .75
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.x
-      value: 105
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mHeight
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: m_Size.y
-      value: 105
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -2556,7 +2556,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 105, y: 105, z: 0}
+  m_Size: {x: 60, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &626111134
 MonoBehaviour:
@@ -2615,13 +2615,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 105
-  mHeight: 105
+  mWidth: 60
+  mHeight: 80
   mDepth: 10
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: .75
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -2633,7 +2633,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0031_slide
+  mSpriteName: kiwii_chuck_slide
   mFillCenter: 1
 --- !u!54 &626111136
 Rigidbody:
@@ -2951,8 +2951,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .737254918}
   mPivot: 4
-  mWidth: 97
-  mHeight: 97
+  mWidth: 52
+  mHeight: 72
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -3891,7 +3891,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 105, y: 105, z: 0}
+  m_Size: {x: 60, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1111737103
 MonoBehaviour:
@@ -3950,13 +3950,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 105
-  mHeight: 105
+  mWidth: 60
+  mHeight: 80
   mDepth: 10
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: .75
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -3968,7 +3968,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0032_jump
+  mSpriteName: kiwii_chuck_jump
   mFillCenter: 1
 --- !u!54 &1111737105
 Rigidbody:
@@ -4085,7 +4085,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 105, y: 105, z: 0}
+  m_Size: {x: 60, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1136352835
 MonoBehaviour:
@@ -4144,13 +4144,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 105
-  mHeight: 105
+  mWidth: 60
+  mHeight: 80
   mDepth: 10
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: .75
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4162,7 +4162,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0034_r
+  mSpriteName: kiwii_chuck_go
   mFillCenter: 1
 --- !u!54 &1136352837
 Rigidbody:
@@ -6305,8 +6305,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .737254918}
   mPivot: 4
-  mWidth: 97
-  mHeight: 97
+  mWidth: 52
+  mHeight: 72
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -6606,8 +6606,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .737254918}
   mPivot: 4
-  mWidth: 97
-  mHeight: 97
+  mWidth: 52
+  mHeight: 72
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
