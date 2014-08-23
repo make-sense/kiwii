@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Reflection;
 using System.Threading;
@@ -15,13 +16,7 @@ public class Chuck : MonoBehaviour {
 	public System.Guid actorGuid;
 	public int actionGuid;
 
-	Color inputColor = new Color (1f, 0.5f, 0.5f);
-	Color outputColor = new Color (0.5f, 0.5f, 1f);
-	Color normalColor = new Color (230f/255f, 180f/255f, 30f/255f);
-
-	public UIButton startButton;
-
-	public bool _isStart = false;
+	int timeLength = 1000;
 
 	public enum eChuckStatus {
 		NONE,
@@ -35,39 +30,6 @@ public class Chuck : MonoBehaviour {
 	public eChuckStatus Status {
 		get {
 			return _status;
-		}
-	}
-
-	public void SetAction(System.Guid actorID, int actionID)
-	{
-		actorGuid = actorID;
-		actionGuid = actionID;
-		SetActionUI();
-	}
-
-	private void SetActionUI() {
-		Actor actor = ActorManager.Instance.Get (actorGuid);
-		if (actor != null) {
-			UIButtonColor baseButtonColor = GetComponentInChildren<UIButtonColor> () as UIButtonColor;
-			ActionData actionData = ActionManager.Instance.GetActionData(actionGuid);
-			if (actionData != null) {
-				if (actionData.Type == eActionType.Input)
-					baseButtonColor.defaultColor = inputColor;
-				else
-					baseButtonColor.defaultColor = outputColor;
-			}
-			else {
-				baseButtonColor.defaultColor = normalColor;
-			}
-
-			UIButton baseButton = GetComponentInChildren<UIButton> () as UIButton;
-			baseButton.normalSprite = "chuck_base";
-			Transform detail = this.transform.FindChild("Detail");
-			if (detail != null) {
-				detail.gameObject.SetActive(true);
-				UIButton button = detail.GetComponentInChildren<UIButton> () as UIButton;
-				button.normalSprite = actionData.texture.name;
-			}
 		}
 	}
 
@@ -96,7 +58,15 @@ public class Chuck : MonoBehaviour {
 			kiwii.gameObject.BroadcastMessage(actionData.CallFunctionName);
 			Debug.Log ("Action:" + actionData.CallFunctionName);
 		}
-		System.Threading.Thread.Sleep (1000);
+		DateTime begin = DateTime.Now;
+		while (true) 
+		{
+			TimeSpan processed = DateTime.Now.Subtract(begin);
+			if (processed.TotalMilliseconds > timeLength)
+				break;
+			else
+				yield return new WaitForSeconds(0.1f);
+		}
 		_status = eChuckStatus.DONE;
 		yield return null;
 	}
@@ -121,7 +91,7 @@ public class Chuck : MonoBehaviour {
 	
 	void OnPress (bool isPressed) 
 	{
-		Debug.Log ("Chuck OnPress:"+Guid.ToString ());
+//		Debug.Log ("Chuck OnPress:"+Guid.ToString ());
 	}
 
 	void OnTriggerEnter(Collider other) 

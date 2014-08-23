@@ -4,7 +4,6 @@ using System.Collections;
 public class CreatePrefab : MonoBehaviour {
 	public GameObject ChuckStage;
 	public GameObject positionOfPrefab;
-	public GameObject DestRoot;
 	public GameObject prefab;
 	private static Vector3 _lastPosition;
 
@@ -21,13 +20,6 @@ public class CreatePrefab : MonoBehaviour {
 	{
 		GameObject instantiatedGameObject = NGUITools.AddChild(this.transform.parent.gameObject, prefab);
 		instantiatedGameObject.transform.localPosition = _lastPosition;
-		switch (prefab.name)
-		{
-		case "Chuck":
-			ChuckManager.Instance.Add (instantiatedGameObject.GetComponentInChildren<Chuck> () as Chuck);
-			Debug.Log ("Chuck Added!");
-			break;
-		}
 		UILabel label = instantiatedGameObject.GetComponentInChildren<UILabel> () as UILabel;
 		Chuck chuck = instantiatedGameObject.GetComponentInChildren<Chuck> () as Chuck;
 		switch (positionOfPrefab.name)
