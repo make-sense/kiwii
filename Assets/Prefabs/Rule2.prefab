@@ -41,10 +41,10 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400008}
-  - 65: {fileID: 6500000}
-  - 54: {fileID: 5400000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
+  - 61: {fileID: 6100000}
+  - 50: {fileID: 5000000}
   m_Layer: 8
   m_Name: Rule2
   m_TagString: Rule2
@@ -90,33 +90,32 @@ Transform:
   - {fileID: 400002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!54 &5400000
-Rigidbody:
+--- !u!50 &5000000
+Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 0
+  m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!65 &6500000
-BoxCollider:
+--- !u!61 &6100000
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 79, y: 79, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,8 +192,6 @@ MonoBehaviour:
   _children:
   - {fileID: 0}
   actionGuid: 0
-  startButton: {fileID: 0}
-  _isStart: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

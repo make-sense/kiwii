@@ -61,10 +61,9 @@ public class Kiwii : Actor {
 		}
 	}*/
 
-
-	void OnCollisionEnter2D(Collision2D other)
+	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log ("onCollisionEnter");
+		Debug.Log ("OnTriggerEnter2D:" + other.name);
 		switch(other.gameObject.tag)
 		{
 		case "Rule1":
@@ -82,6 +81,11 @@ public class Kiwii : Actor {
 			Debug.Log (other.gameObject.tag);
 			break;
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		Debug.Log ("onCollisionEnter");
 	}
 
 	// Use this for initialization
