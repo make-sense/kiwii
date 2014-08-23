@@ -23,6 +23,21 @@ public class Chuck : MonoBehaviour {
 
 	public bool _isStart = false;
 
+	public enum eChuckStatus {
+		NONE,
+		READY,
+		RUNNING,
+		DONE,
+		WARNING,
+		ERROR,
+	};
+	eChuckStatus _status = eChuckStatus.READY;
+	public eChuckStatus Status {
+		get {
+			return _status;
+		}
+	}
+
 	public void SetAction(System.Guid actorID, int actionID)
 	{
 		actorGuid = actorID;
@@ -65,6 +80,15 @@ public class Chuck : MonoBehaviour {
 		// 1. check state
 
 		// 2. run this
+		StartCoroutine ("Execute_Co");
+
+		// 3. run next chuck
+		StartCoroutine ("Execute_Bottom");
+	}
+
+	IEnumerator Execute_Co ()
+	{
+		_status = eChuckStatus.RUNNING;
 		ActionData actionData = ActionManager.Instance.GetActionData(actionGuid);
 		if (actionData != null) 
 		{
@@ -72,15 +96,22 @@ public class Chuck : MonoBehaviour {
 			kiwii.gameObject.BroadcastMessage(actionData.CallFunctionName);
 			Debug.Log ("Action:" + actionData.CallFunctionName);
 		}
+		System.Threading.Thread.Sleep (1000);
+		_status = eChuckStatus.DONE;
+		yield return null;
+	}
+	
+	IEnumerator Execute_Bottom ()
+	{
+		while (_status == eChuckStatus.RUNNING)
+			yield return new WaitForSeconds (0.1f);
 
-		// 3. run next chuck
 		if (_children [0] != null) {
-//			Thread thread = new Thread (new ThreadStart (_children [0].Execute));
-//			thread.Start ();
 			_children [0].Execute ();
 		}
+		yield return null;
 	}
-
+	
 	// Use this for initialization
 	void Start () {
 		Guid = System.Guid.NewGuid ();
@@ -97,7 +128,6 @@ public class Chuck : MonoBehaviour {
 	{
 		if (other.tag == "Chuck") 
 		{
-			Debug.Log ("Destroy " + other.name);
 			Vector3 srcPos = getGlobalPosition(this.transform);
 			Vector3 dstPos = getGlobalPosition(other.transform);
 			if (isRightEdge(srcPos, dstPos))

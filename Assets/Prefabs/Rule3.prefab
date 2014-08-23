@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restriction: 0
-  cloneOnDrag: 1
+  cloneOnDrag: 0
   pressAndHoldDelay: 1
 --- !u!114 &11400006
 MonoBehaviour:
