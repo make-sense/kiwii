@@ -4,16 +4,16 @@ using System.Collections;
 public class Kiwii : Actor {
 	
 	public float _speed = 1.0f;
+	private bool isExe = false;
 	private string type;
 	private float srcPos, dstPos;
-	private float halfPos;
 	
 	public void Go ()
 	{
 		Debug.Log ("Go");
 		//transform.Translate(0.5f, 0, 0);
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 70;
+		dstPos = srcPos + 200;
 		type = "go";
 	}
 	
@@ -22,7 +22,7 @@ public class Kiwii : Actor {
 		Debug.Log ("Back");
 		//transform.Translate(-0.5f, 0, 0);
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos - 70;
+		dstPos = srcPos - 200;
 		type = "back";
 	}
 	
@@ -31,8 +31,7 @@ public class Kiwii : Actor {
 		Debug.Log ("Jump");
 		//transform.Translate(0.5f, 0.5f, 0);
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 70;
-		halfPos = ((dstPos - srcPos) * 0.5f) + srcPos;
+		dstPos = srcPos + 200;
 		type = "jump";
 	}
 	
@@ -41,7 +40,7 @@ public class Kiwii : Actor {
 		Debug.Log ("Slide");
 		//transform.Translate(0.5f, 0, 0);
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 70;
+		dstPos = srcPos + 200;
 		type = "slide";
 	}
 	
@@ -51,13 +50,7 @@ public class Kiwii : Actor {
 		//isExe = true;
 		type = "startmoving";
 	}
-
-	public void Reset()
-	{
-		transform.localPosition = new Vector3 (-522.0f, 94.0f, 0);
-		type = "reset";
-	}
-
+	
 	public override void Refresh ()
 	{
 	}
@@ -94,6 +87,8 @@ public class Kiwii : Actor {
 			// Execute Rule1
 			Chuck chuck = ChuckManager.Instance.Get (other.gameObject.tag);
 			if (chuck != null){
+				Debug.Log("isExe = false");
+				isExe = false;
 				chuck.Execute ();
 			}
 			Destroy(other.gameObject);
@@ -143,12 +138,7 @@ public class Kiwii : Actor {
 		case "jump":
 			if (srcPos < dstPos) 
 			{
-				if(srcPos < halfPos){
-					transform.Translate (_speed * Time.deltaTime, _speed * 6 * Time.deltaTime, 0);
-				}
-				else if(srcPos >= halfPos){
-					transform.Translate (_speed * Time.deltaTime, 0, 0);
-				}
+				transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
 				srcPos = transform.localPosition.x;
 			}
 			break;
