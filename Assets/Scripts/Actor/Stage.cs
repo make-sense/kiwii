@@ -21,6 +21,16 @@ public class Stage : Actor {
 		SetUI ();
 	}
 
+	public void Reset ()
+	{
+		Debug.Log ("Reset Stage");
+		Kiwii kiwii = (Kiwii)ActorManager.Instance.Get (Actor.eCharactor.KIWII);
+		if (kiwii != null) 
+		{
+			kiwii.ToInitPos ();
+		}
+	}
+
 	public bool IsRun ()
 	{
 		return _isRun;

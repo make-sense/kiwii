@@ -5494,7 +5494,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: onClick.Array.data[0].mTarget
       value: 
-      objectReference: {fileID: 803769528}
+      objectReference: {fileID: 1336106624}
     - target: {fileID: 11400000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: onClick.Array.data[0].mMethodName
       value: Reset
@@ -6254,7 +6254,7 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
   onClick:
-  - mTarget: {fileID: 803769528}
+  - mTarget: {fileID: 1336106624}
     mMethodName: Reset
     mParameters: []
     oneShot: 0

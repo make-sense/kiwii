@@ -50,11 +50,16 @@ public class Kiwii : Actor {
 		//isExe = true;
 		type = "startmoving";
 	}
-	
+
 	public override void Refresh ()
 	{
 	}
-	
+
+	public void ToInitPos ()
+	{
+		transform.localPosition = new Vector3 (-522, 94);
+	}
+
 	/*void OnTriggerEnter(Collider other) 
 	{
 		Debug.Log ("onTriggerEnter");
