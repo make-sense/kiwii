@@ -24,7 +24,7 @@ public class Stage : Actor {
 	public void Reset ()
 	{
 		Debug.Log ("Reset Stage");
-		Application.LoadLevel ("kiwii");
+		Application.LoadLevel (Application.loadedLevel);
 //		Kiwii kiwii = (Kiwii)ActorManager.Instance.Get (Actor.eCharactor.KIWII);
 //		if (kiwii != null) 
 //		{

@@ -102,6 +102,7 @@ public class Kiwii : Actor {
 		case "Feather":
 			Destroy(other.gameObject);
 			Debug.Log (other.gameObject.tag);
+			Application.LoadLevel("lv2");
 			break;
 		}
 	}
