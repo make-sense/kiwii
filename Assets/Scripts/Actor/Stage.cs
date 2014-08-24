@@ -24,11 +24,12 @@ public class Stage : Actor {
 	public void Reset ()
 	{
 		Debug.Log ("Reset Stage");
-		Kiwii kiwii = (Kiwii)ActorManager.Instance.Get (Actor.eCharactor.KIWII);
-		if (kiwii != null) 
-		{
-			kiwii.ToInitPos ();
-		}
+		Application.LoadLevel ("kiwii");
+//		Kiwii kiwii = (Kiwii)ActorManager.Instance.Get (Actor.eCharactor.KIWII);
+//		if (kiwii != null) 
+//		{
+//			kiwii.ToInitPos ();
+//		}
 	}
 
 	public bool IsRun ()
