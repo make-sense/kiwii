@@ -7,6 +7,7 @@ public class Kiwii : Actor {
 	private bool isExe = false;
 	private string type;
 	private float srcPos, dstPos;
+	private GameObject mountain, sky;
 	
 	public void Go ()
 	{
@@ -111,11 +112,28 @@ public class Kiwii : Actor {
 	{
 		Debug.Log ("onCollisionEnter");
 	}
+
+	void BackgroundMove()
+	{
+		mountain.transform.Translate(-0.05f * Time.deltaTime, 0, 0);
+		if(mountain.transform.localPosition.x < -180)
+		{
+			mountain.transform.localPosition = new Vector3(-145, 131, 0);
+		}
+		sky.transform.Translate(-0.1f * Time.deltaTime, 0, 0);
+		if(sky.transform.localPosition.x < -180)
+		{
+			sky.transform.localPosition = new Vector3(-145, 272, 0);
+		}
+	}
 	
 	// Use this for initialization
 	void Start () {
 		Guid = System.Guid.NewGuid ();
 		charactorType = eCharactor.KIWII;
+
+		mountain = GameObject.Find ("Mountain");
+		sky = GameObject.Find ("Sky");
 	}
 	
 	// Update is called once per frame
@@ -125,13 +143,16 @@ public class Kiwii : Actor {
 			if (transform.localPosition.x < 280) 
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
+				BackgroundMove();
 			}
 			break;
 		case "go":
 			if (srcPos < dstPos) 
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
-				srcPos = transform.localPosition.x;	
+				srcPos = transform.localPosition.x;
+
+				BackgroundMove();
 			}
 			break;
 		case "back":
@@ -139,6 +160,8 @@ public class Kiwii : Actor {
 			{
 				transform.Translate (-(_speed * Time.deltaTime), 0, 0);
 				srcPos = transform.localPosition.x;
+
+				BackgroundMove();
 			}
 			break;
 		case "jump":
@@ -146,6 +169,8 @@ public class Kiwii : Actor {
 			{
 				transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
 				srcPos = transform.localPosition.x;
+
+				BackgroundMove();
 			}
 			break;
 		case "slide":
@@ -153,6 +178,8 @@ public class Kiwii : Actor {
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
 				srcPos = transform.localPosition.x;
+
+				BackgroundMove();
 			}
 			break;
 		}
