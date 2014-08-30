@@ -113,7 +113,7 @@ public class Kiwii : Actor {
 				chuck.Execute ();
 			}
 			Destroy(other.gameObject);
-			Debug.Log (other.gameObject.tag);
+			Debug.Log ("other.gameObject.tag : " + other.gameObject.tag);
 			break;
 		case "Feather":
 			Destroy(other.gameObject);
@@ -157,7 +157,7 @@ public class Kiwii : Actor {
 	void Update () {
 		switch (type) {
 		case "startmoving":
-			if (transform.localPosition.x < 280) 
+			if (transform.localPosition.x < 280 && transform.localPosition.x > -580) 
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
 				BackgroundMove();
