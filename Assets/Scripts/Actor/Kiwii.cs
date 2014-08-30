@@ -8,7 +8,7 @@ public class Kiwii : Actor {
 	private bool direction = true;
 	private float srcPos, dstPos;
 	private GameObject mountain, sky;
-	private GameObject startBtn;
+	private GameObject startBtn, stopBtn;
 	
 	public void Go ()
 	{
@@ -57,7 +57,16 @@ public class Kiwii : Actor {
 	{
 		Debug.Log ("Start Moving");
 		type = "startmoving";
+		startBtn.SetActive(false);
+		stopBtn.SetActive (true);
+	}
 
+	public void StopMoving()
+	{
+		Debug.Log("Stop Moving");
+		type = "stop";
+		startBtn.SetActive(true);
+		stopBtn.SetActive (false);
 	}
 
 	public override void Refresh ()
@@ -141,6 +150,7 @@ public class Kiwii : Actor {
 		mountain = GameObject.Find ("Mountain");
 		sky = GameObject.Find ("Sky");
 		startBtn = GameObject.Find ("Play");
+		stopBtn = GameObject.Find ("Pause");
 	}
 	
 	// Update is called once per frame
@@ -152,6 +162,9 @@ public class Kiwii : Actor {
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
 				BackgroundMove();
 			}
+			break;
+		case "stoptmoving":
+			transform.Translate (0, 0, 0);
 			break;
 		case "go":
 			if (transform.localPosition.x < 280) 
