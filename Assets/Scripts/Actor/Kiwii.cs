@@ -4,42 +4,50 @@ using System.Collections;
 public class Kiwii : Actor {
 	
 	public float _speed = 1.0f;
-	private bool isExe = false;
 	private string type;
+	private bool direction = true;
 	private float srcPos, dstPos;
 	private GameObject mountain, sky;
+	private GameObject startBtn;
 	
 	public void Go ()
 	{
 		Debug.Log ("Go");
-		//transform.Translate(0.5f, 0, 0);
-		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 200;
+		//srcPos = transform.localPosition.x;
+		//dstPos = srcPos + 200;
 		type = "go";
+		direction = true;
+		transform.localRotation = Quaternion.Euler(new Vector3 (0, 0, 0));
 	}
 	
 	public void Back ()
 	{
 		Debug.Log ("Back");
-		//transform.Translate(-0.5f, 0, 0);
-		srcPos = transform.localPosition.x;
-		dstPos = srcPos - 200;
+		//srcPos = transform.localPosition.x;
+		//dstPos = srcPos - 200;
 		type = "back";
+		direction = false;
+		transform.localRotation = Quaternion.Euler(new Vector3 (180.0f, 0, 180.0f));
 	}
 	
 	public void Jump ()
 	{
 		Debug.Log ("Jump");
-		//transform.Translate(0.5f, 0.5f, 0);
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 200;
+		if (direction) 
+		{
+			dstPos = srcPos + 100;
+		} 
+		else if (!direction) 
+		{
+			dstPos = srcPos - 100;
+		}
 		type = "jump";
 	}
 	
 	public void Slide ()
 	{
 		Debug.Log ("Slide");
-		//transform.Translate(0.5f, 0, 0);
 		srcPos = transform.localPosition.x;
 		dstPos = srcPos + 200;
 		type = "slide";
@@ -48,8 +56,8 @@ public class Kiwii : Actor {
 	public void StartMoving()
 	{
 		Debug.Log ("Start Moving");
-		//isExe = true;
 		type = "startmoving";
+
 	}
 
 	public override void Refresh ()
@@ -93,8 +101,6 @@ public class Kiwii : Actor {
 			// Execute Rule1
 			Chuck chuck = ChuckManager.Instance.Get (other.gameObject.tag);
 			if (chuck != null){
-				Debug.Log("isExe = false");
-				isExe = false;
 				chuck.Execute ();
 			}
 			Destroy(other.gameObject);
@@ -134,6 +140,7 @@ public class Kiwii : Actor {
 
 		mountain = GameObject.Find ("Mountain");
 		sky = GameObject.Find ("Sky");
+		startBtn = GameObject.Find ("Play");
 	}
 	
 	// Update is called once per frame
@@ -147,7 +154,7 @@ public class Kiwii : Actor {
 			}
 			break;
 		case "go":
-			if (srcPos < dstPos) 
+			if (transform.localPosition.x < 280) 
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
 				srcPos = transform.localPosition.x;
@@ -156,29 +163,46 @@ public class Kiwii : Actor {
 			}
 			break;
 		case "back":
-			if (srcPos > dstPos) 
+			if (transform.localPosition.x > -580) 
 			{
-				transform.Translate (-(_speed * Time.deltaTime), 0, 0);
-				srcPos = transform.localPosition.x;
-
+				transform.Translate (_speed * Time.deltaTime, 0, 0);
+				//srcPos = transform.localPosition.x;
 				BackgroundMove();
 			}
 			break;
 		case "jump":
-			if (srcPos < dstPos) 
+			if (direction) 
 			{
-				transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
-				srcPos = transform.localPosition.x;
-
-				BackgroundMove();
+				if(srcPos < dstPos)
+				{
+					transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
+					srcPos = transform.localPosition.x;
+					BackgroundMove();
+				}
+				else
+				{
+					type = "go";
+				}
+			}
+			else if(!direction)
+			{
+				if(srcPos > dstPos)
+				{
+					transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
+					srcPos = transform.localPosition.x;
+					BackgroundMove();
+				}
+				else
+				{
+					type = "back";
+				}
 			}
 			break;
 		case "slide":
 			if (srcPos < dstPos) 
 			{
 				transform.Translate (_speed * Time.deltaTime, 0, 0);
-				srcPos = transform.localPosition.x;
-
+				//srcPos = transform.localPosition.x;
 				BackgroundMove();
 			}
 			break;
