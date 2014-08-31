@@ -307,7 +307,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: kiwii_chuck_back
+      value: 0033_l
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -585,7 +585,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: kiwii_chuck_back
+  mSpriteName: 0033_l
   mFillCenter: 1
 --- !u!54 &93446504
 Rigidbody:
@@ -1326,7 +1326,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: kiwii_chuck_jump
+      value: 0032_jump
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -1971,7 +1971,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: kiwii_chuck_slide
+      value: 0031_slide
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -2651,7 +2651,7 @@ Prefab:
         type: 2}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mSpriteName
-      value: kiwii_chuck_go
+      value: 0034_r
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
       propertyPath: mWidth
@@ -2826,7 +2826,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: kiwii_chuck_slide
+  mSpriteName: 0031_slide
   mFillCenter: 1
 --- !u!54 &626111136
 Rigidbody:
@@ -4384,7 +4384,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: kiwii_chuck_jump
+  mSpriteName: 0032_jump
   mFillCenter: 1
 --- !u!54 &1111737105
 Rigidbody:
@@ -4578,7 +4578,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: kiwii_chuck_go
+  mSpriteName: 0034_r
   mFillCenter: 1
 --- !u!54 &1136352837
 Rigidbody:
