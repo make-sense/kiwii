@@ -43,8 +43,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
-  - 65: {fileID: 6500000}
-  - 54: {fileID: 5400000}
+  - 61: {fileID: 6100002}
   m_Layer: 8
   m_Name: Rule1
   m_TagString: Rule1
@@ -119,21 +118,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400004}
   m_RootOrder: 2
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -145,18 +129,17 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 79, y: 79}
   m_Center: {x: 0, y: 0}
---- !u!65 &6500000
-BoxCollider:
+--- !u!61 &6100002
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 79, y: 79, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1

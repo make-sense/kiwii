@@ -3363,7 +3363,7 @@ MonoBehaviour:
   charactorType: 0
   ActorName: 
   Pos: {x: 0, y: 0, z: 0}
-  _speed: 1
+  _speed: .5
 --- !u!114 &803769529
 MonoBehaviour:
   m_ObjectHideFlags: 0

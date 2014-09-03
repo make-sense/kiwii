@@ -36,11 +36,11 @@ public class Kiwii : Actor {
 		srcPos = transform.localPosition.x;
 		if (direction) 
 		{
-			dstPos = srcPos + 100;
+			dstPos = srcPos + 150;
 		} 
 		else if (!direction) 
 		{
-			dstPos = srcPos - 100;
+			dstPos = srcPos - 150;
 		}
 		type = "jump";
 	}
@@ -49,8 +49,18 @@ public class Kiwii : Actor {
 	{
 		Debug.Log ("Slide");
 		srcPos = transform.localPosition.x;
-		dstPos = srcPos + 200;
+		if (direction) 
+		{
+			dstPos = srcPos + 150;
+			transform.localRotation = Quaternion.Euler(new Vector3 (0, 0, 90.0f));
+		} 
+		else if (!direction) 
+		{
+			dstPos = srcPos - 150;
+			transform.localRotation = Quaternion.Euler(new Vector3 (0, 180.0f, 90.0f));
+		}
 		type = "slide";
+
 	}
 	
 	public void StartMoving()
@@ -188,7 +198,7 @@ public class Kiwii : Actor {
 			{
 				if(srcPos < dstPos)
 				{
-					transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
+					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 5 * Time.deltaTime, 0);
 					srcPos = transform.localPosition.x;
 					BackgroundMove();
 				}
@@ -201,7 +211,7 @@ public class Kiwii : Actor {
 			{
 				if(srcPos > dstPos)
 				{
-					transform.Translate (_speed * Time.deltaTime, _speed * 3 * Time.deltaTime, 0);
+					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 5 * Time.deltaTime, 0);
 					srcPos = transform.localPosition.x;
 					BackgroundMove();
 				}
@@ -212,11 +222,31 @@ public class Kiwii : Actor {
 			}
 			break;
 		case "slide":
-			if (srcPos < dstPos) 
+			if (direction) 
 			{
-				transform.Translate (_speed * Time.deltaTime, 0, 0);
-				//srcPos = transform.localPosition.x;
-				BackgroundMove();
+				if(srcPos < dstPos)
+				{
+					transform.Translate (0, -(_speed * Time.deltaTime), 0);
+					srcPos = transform.localPosition.x;
+					BackgroundMove();
+				}
+				else
+				{
+					Go ();
+				}
+			}
+			else if(!direction)
+			{
+				if(srcPos > dstPos)
+				{
+					transform.Translate (0, -(_speed * Time.deltaTime), 0);
+					srcPos = transform.localPosition.x;
+					BackgroundMove();
+				}
+				else
+				{
+					Back();
+				}
 			}
 			break;
 		}
