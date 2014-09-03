@@ -296,7 +296,6 @@ Transform:
   m_LocalScale: {x: .00347222225, y: .00347222225, z: .00347222225}
   m_Children:
   - {fileID: 1205461303}
-  - {fileID: 1298173308}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1 &918870792
@@ -314,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &918870793
 Transform:
   m_ObjectHideFlags: 0
@@ -485,8 +484,9 @@ GameObject:
   - 114: {fileID: 1298173311}
   - 114: {fileID: 1298173310}
   - 65: {fileID: 1298173309}
+  - 114: {fileID: 1298173312}
   m_Layer: 8
-  m_Name: Control - Simple Button
+  m_Name: PlayBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -502,8 +502,8 @@ Transform:
   m_LocalPosition: {x: 300, y: -162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 686401474}
-  m_RootOrder: 1
+  m_Father: {fileID: 1577794049}
+  m_RootOrder: 2
 --- !u!65 &1298173309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -580,7 +580,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 286
   mHeight: 203
-  mDepth: 4
+  mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -598,6 +598,44 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
   mSpriteName: intro_play_bt
   mFillCenter: 1
+--- !u!114 &1298173312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298173307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa4a4a103e4fed43a7e9e9df4a6915c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: 2
+  steeperCurves: 0
+  tweenGroup: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {r: 1, g: 1, b: 1, a: 0}
+  to: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1577794048
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +663,7 @@ Transform:
   m_Children:
   - {fileID: 182996505}
   - {fileID: 918870793}
+  - {fileID: 1298173308}
   m_Father: {fileID: 1205461303}
   m_RootOrder: 0
 --- !u!1 &2119592045

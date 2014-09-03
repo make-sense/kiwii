@@ -85,7 +85,7 @@ public class Kiwii : Actor {
 
 	public void ToInitPos ()
 	{
-		transform.localPosition = new Vector3 (-522, 94);
+		transform.localPosition = new Vector3 (-550, -54);
 	}
 
 	/*void OnTriggerEnter(Collider other) 
@@ -143,7 +143,7 @@ public class Kiwii : Actor {
 		mountain.transform.Translate(-0.05f * Time.deltaTime, 0, 0);
 		if(mountain.transform.localPosition.x < -180)
 		{
-			mountain.transform.localPosition = new Vector3(-145, 131, 0);
+			mountain.transform.localPosition = new Vector3(380, 77, 0);
 		}
 		sky.transform.Translate(-0.1f * Time.deltaTime, 0, 0);
 		if(sky.transform.localPosition.x < -180)
