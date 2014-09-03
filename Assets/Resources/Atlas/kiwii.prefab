@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 9e0d74467d29d744687682f2552f60a6, type: 2}
   mSprites:
   - name: 0002_1j-block
-    x: 1334
-    y: 3005
+    x: 118
+    y: 3
     width: 58
     height: 48
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0002_1j-block-on
-    x: 1273
-    y: 3041
+    x: 59
+    y: 3
     width: 58
     height: 48
     borderLeft: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0003_1j-block-
-    x: 1131
-    y: 2961
+    x: 0
+    y: 3
     width: 58
     height: 48
     borderLeft: 0
@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0004_33
-    x: 1456
-    y: 3521
+    x: 307
+    y: 10
     width: 41
     height: 41
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0005_11
-    x: 1414
-    y: 3521
+    x: 265
+    y: 10
     width: 41
     height: 41
     borderLeft: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0007_22
-    x: 1498
-    y: 3521
+    x: 223
+    y: 10
     width: 41
     height: 41
     borderLeft: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0008_n3-on
-    x: 1563
-    y: 3526
+    x: 1677
+    y: 371
     width: 79
     height: 79
     borderLeft: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0009_n3-off
-    x: 1131
-    y: 3010
+    x: 1605
+    y: 161
     width: 70
     height: 79
     borderLeft: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0010_n2-on
-    x: 1025
-    y: 3056
+    x: 1757
+    y: 371
     width: 79
     height: 79
     borderLeft: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0011_n2-off
-    x: 1202
-    y: 3010
+    x: 1605
+    y: 241
     width: 70
     height: 79
     borderLeft: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0012_n1-on
-    x: 1025
-    y: 2976
+    x: 1837
+    y: 371
     width: 79
     height: 79
     borderLeft: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0013_n1-off
-    x: 1334
-    y: 3378
+    x: 1605
+    y: 81
     width: 70
     height: 79
     borderLeft: 0
@@ -198,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0014_kiwii
-    x: 1956
-    y: 3541
+    x: 1605
+    y: 321
     width: 71
     height: 129
     borderLeft: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0017_feather1
-    x: 1998
-    y: 3937
+    x: 177
+    y: 4
     width: 45
     height: 47
     borderLeft: 0
@@ -224,8 +224,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0019_wd-box
-    x: 1237
-    y: 3255
+    x: 1350
+    y: 9
     width: 93
     height: 92
     borderLeft: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 0020_bin-on
     x: 1025
-    y: 3403
+    y: 23
     width: 308
     height: 54
     borderLeft: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0021_bin-off
-    x: 1025
-    y: 3348
+    x: 1499
+    y: 451
     width: 308
     height: 54
     borderLeft: 0
@@ -263,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0022_reset-on
-    x: 1414
-    y: 3563
+    x: 1888
+    y: 542
     width: 148
     height: 148
     borderLeft: 0
@@ -276,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0023_reset-off
-    x: 1701
-    y: 3671
+    x: 1739
+    y: 542
     width: 148
     height: 148
     borderLeft: 0
@@ -289,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0024_play-stop
-    x: 1701
-    y: 3522
+    x: 1350
+    y: 357
     width: 148
     height: 148
     borderLeft: 0
@@ -302,8 +302,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0025_play-off
-    x: 1850
-    y: 3671
+    x: 1350
+    y: 208
     width: 148
     height: 148
     borderLeft: 0
@@ -315,8 +315,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0028_s-box1
-    x: 1701
-    y: 3820
+    x: 1025
+    y: 78
     width: 295
     height: 95
     borderLeft: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0029_box1
-    x: 0
-    y: 1068
+    x: 1025
+    y: 174
     width: 324
     height: 720
     borderLeft: 0
@@ -341,8 +341,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0030_repeat-
-    x: 1563
-    y: 3606
+    x: 1499
+    y: 27
     width: 105
     height: 105
     borderLeft: 0
@@ -354,8 +354,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0031_slide
-    x: 1025
-    y: 3136
+    x: 1350
+    y: 102
     width: 105
     height: 105
     borderLeft: 0
@@ -367,8 +367,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0032_jump
-    x: 1131
-    y: 3242
+    x: 1499
+    y: 133
     width: 105
     height: 105
     borderLeft: 0
@@ -380,8 +380,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0033_l
-    x: 1025
-    y: 3242
+    x: 1499
+    y: 239
     width: 105
     height: 105
     borderLeft: 0
@@ -393,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0034_r
-    x: 1850
-    y: 3565
+    x: 1499
+    y: 345
     width: 105
     height: 105
     borderLeft: 0
@@ -406,8 +406,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0035_MT
-    x: 325
-    y: 1585
+    x: 0
+    y: 114
     width: 1024
     height: 203
     borderLeft: 0
@@ -419,8 +419,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0036_sky
-    x: 325
-    y: 1403
+    x: 2050
+    y: 1867
     width: 1024
     height: 181
     borderLeft: 0
@@ -432,8 +432,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0037_under2
-    x: 1025
-    y: 3458
+    x: 0
+    y: 52
     width: 972
     height: 61
     borderLeft: 0
@@ -445,8 +445,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0038_under
-    x: 1025
-    y: 3916
+    x: 3075
+    y: 1868
     width: 972
     height: 180
     borderLeft: 0
@@ -458,8 +458,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 1bt
-    x: 1131
-    y: 3166
+    x: 1917
+    y: 375
     width: 81
     height: 75
     borderLeft: 0
@@ -471,8 +471,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 1bt_on
-    x: 1213
-    y: 3104
+    x: 1841
+    y: 309
     width: 81
     height: 61
     borderLeft: 0
@@ -484,8 +484,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 2bt
-    x: 1213
-    y: 3166
+    x: 1677
+    y: 295
     width: 81
     height: 75
     borderLeft: 0
@@ -497,8 +497,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 2bt_on
-    x: 1405
-    y: 3396
+    x: 1923
+    y: 309
     width: 81
     height: 61
     borderLeft: 0
@@ -510,8 +510,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 3bt
-    x: 1131
-    y: 3090
+    x: 1759
+    y: 295
     width: 81
     height: 75
     borderLeft: 0
@@ -523,8 +523,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 3bt_on
-    x: 1202
-    y: 2948
+    x: 1677
+    y: 233
     width: 81
     height: 61
     borderLeft: 0
@@ -535,9 +535,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 2
     paddingBottom: 0
+  - name: black
+    x: 0
+    y: 1472
+    width: 1024
+    height: 576
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Flying kiwii_icon
-    x: 1025
-    y: 3527
+    x: 1350
+    y: 506
     width: 388
     height: 388
     borderLeft: 0
@@ -550,7 +563,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: intro
     x: 0
-    y: 3520
+    y: 318
     width: 1024
     height: 576
     borderLeft: 0
@@ -562,8 +575,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: intro_play_bt
-    x: 1414
-    y: 3712
+    x: 1739
+    y: 691
     width: 286
     height: 203
     borderLeft: 0
@@ -575,8 +588,8 @@ MonoBehaviour:
     paddingTop: 22
     paddingBottom: 6
   - name: kiwii_chuck_back
-    x: 1334
-    y: 3297
+    x: 1677
+    y: 152
     width: 60
     height: 80
     borderLeft: 0
@@ -588,8 +601,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: kiwii_chuck_go
-    x: 1334
-    y: 3054
+    x: 1759
+    y: 133
     width: 60
     height: 80
     borderLeft: 0
@@ -601,8 +614,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: kiwii_chuck_jump
-    x: 1334
-    y: 3216
+    x: 1677
+    y: 71
     width: 60
     height: 80
     borderLeft: 0
@@ -614,8 +627,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: kiwii_chuck_slide
-    x: 1334
-    y: 3135
+    x: 1759
+    y: 214
     width: 60
     height: 80
     borderLeft: 0
@@ -627,8 +640,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: loding
-    x: 0
-    y: 2366
+    x: 1025
+    y: 1472
     width: 1024
     height: 576
     borderLeft: 0
@@ -640,8 +653,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: loding2
-    x: 0
-    y: 1789
+    x: 1025
+    y: 895
     width: 1024
     height: 576
     borderLeft: 0
@@ -653,8 +666,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: spot
-    x: 1998
-    y: 3985
+    x: 973
+    y: 2
     width: 35
     height: 111
     borderLeft: 0
@@ -667,7 +680,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: st
     x: 0
-    y: 2943
+    y: 895
     width: 1024
     height: 576
     borderLeft: 0

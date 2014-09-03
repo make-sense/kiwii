@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartGame : MonoBehaviour {
+public class NextScene : MonoBehaviour {
 
-	public void StartLevel ()
+	public string nextScene;
+
+	public void LoadScene()
 	{
-		Debug.Log ("lv1");
-		Application.LoadLevel("04_lv1");
+		Debug.Log("next scene");
+		Application.LoadLevel(nextScene);
+
 	}
+
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +20,6 @@ public class StartGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }
