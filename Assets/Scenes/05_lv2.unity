@@ -2093,8 +2093,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: .737254918}
   mPivot: 4
-  mWidth: 63
-  mHeight: 121
+  mWidth: 34
+  mHeight: 68
   mDepth: 5
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -2134,7 +2134,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 121
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3534,8 +3534,8 @@ Transform:
   m_PrefabInternal: {fileID: 1647905708}
   m_GameObject: {fileID: 803769526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -550, y: -54, z: 0}
-  m_LocalScale: {x: 1.00007999, y: 1.00007999, z: 1.00007999}
+  m_LocalPosition: {x: -547, y: -80, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1460428924}
   - {fileID: 458440329}
@@ -3584,7 +3584,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 71, y: 129}
+  m_Size: {x: 42, y: 76}
   m_Center: {x: 0, y: 0}
 --- !u!50 &803769531
 Rigidbody2D:
@@ -3658,13 +3658,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 71
-  mHeight: 129
+  mWidth: 42
+  mHeight: 76
   mDepth: 16
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .550387621
+  aspectRatio: .552631557
   mType: 3
   mFillDirection: 4
   mFillAmount: 1
@@ -3676,7 +3676,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0014_kiwii
+  mSpriteName: kiwii_small
   mFillCenter: 1
 --- !u!1 &857850290
 GameObject:
@@ -3688,6 +3688,7 @@ GameObject:
   - 4: {fileID: 857850291}
   - 114: {fileID: 857850292}
   - 61: {fileID: 857850293}
+  - 95: {fileID: 857850294}
   m_Layer: 8
   m_Name: Feather
   m_TagString: Feather
@@ -3702,7 +3703,7 @@ Transform:
   m_PrefabInternal: {fileID: 462649428}
   m_GameObject: {fileID: 857850290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121, y: -70, z: 0}
+  m_LocalPosition: {x: 180, y: -70, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1336106623}
@@ -3770,6 +3771,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 45, y: 47}
   m_Center: {x: 0, y: 0}
+--- !u!95 &857850294
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857850290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: afe076cd8eaea814abd91eb11b2a6eb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!1 &884280157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5496,7 +5511,7 @@ Transform:
   m_PrefabInternal: {fileID: 1681036113}
   m_GameObject: {fileID: 1399177687}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -233, y: -72, z: 0}
+  m_LocalPosition: {x: -233, y: -89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1336106623}
@@ -5511,7 +5526,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 93, y: 92}
+  m_Size: {x: 58, y: 58}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1399177690
 MonoBehaviour:
@@ -5544,13 +5559,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 93
-  mHeight: 92
+  mWidth: 58
+  mHeight: 58
   mDepth: 17
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.01086962
+  aspectRatio: 1
   mType: 3
   mFillDirection: 4
   mFillAmount: 1
@@ -5562,7 +5577,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
-  mSpriteName: 0019_wd-box
+  mSpriteName: box_small
   mFillCenter: 1
 --- !u!1001 &1432977632
 Prefab:
@@ -5970,11 +5985,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -550
+      value: -547
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -54
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6003,6 +6018,34 @@ Prefab:
     - target: {fileID: 100004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
       propertyPath: m_Name
       value: Kiwii
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mSpriteName
+      value: kiwii_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mWidth
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mHeight
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: aspectRatio
+      value: .552631557
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
@@ -6207,7 +6250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -72
+      value: -89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6236,6 +6279,30 @@ Prefab:
     - target: {fileID: 100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mSpriteName
+      value: box_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mWidth
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mHeight
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: aspectRatio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: m_Size.x
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: m_Size.y
+      value: 58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
