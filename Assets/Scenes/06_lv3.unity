@@ -2447,7 +2447,7 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 11.3149176
-  mType: 2
+  mType: 3
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -3525,7 +3525,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .520661175
+  aspectRatio: .5
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
@@ -4333,6 +4333,7 @@ GameObject:
   - 4: {fileID: 927003298}
   - 114: {fileID: 927003300}
   - 61: {fileID: 927003299}
+  - 95: {fileID: 927003301}
   m_Layer: 8
   m_Name: Feather2
   m_TagString: Feather
@@ -4415,6 +4416,20 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: c27037a58d77e5b4d8ddee76a042c39d, type: 2}
   mSpriteName: 0017_feather1
   mFillCenter: 1
+--- !u!95 &927003301
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927003297}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9ba377d28696584f8d2b5944e0ac9b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1009558698
 Prefab:
   m_ObjectHideFlags: 0
@@ -6181,6 +6196,18 @@ Prefab:
     - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
       propertyPath: aspectRatio
       value: .552631557
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mWidth
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mHeight
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: aspectRatio
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}

@@ -4059,7 +4059,7 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 11.3149176
-  mType: 2
+  mType: 3
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0

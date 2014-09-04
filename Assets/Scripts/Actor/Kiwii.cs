@@ -140,15 +140,27 @@ public class Kiwii : Actor {
 
 	void BackgroundMove()
 	{
-		mountain.transform.Translate(-0.05f * Time.deltaTime, 0, 0);
-		if(mountain.transform.localPosition.x < -180)
+		if (direction)
 		{
-			mountain.transform.localPosition = new Vector3(380, 77, 0);
+			mountain.transform.Translate (-0.1f * Time.deltaTime, 0, 0);
+			if (mountain.transform.localPosition.x < -250) {
+					mountain.transform.localPosition = new Vector3 (380, 77, 0);
+			}
+			sky.transform.Translate (-0.3f * Time.deltaTime, 0, 0);
+			if (sky.transform.localPosition.x < -250) {
+					sky.transform.localPosition = new Vector3 (380, 270, 0);
+			}
 		}
-		sky.transform.Translate(-0.1f * Time.deltaTime, 0, 0);
-		if(sky.transform.localPosition.x < -180)
+		else if(!direction)
 		{
-			sky.transform.localPosition = new Vector3(-145, 272, 0);
+			mountain.transform.Translate (0.1f * Time.deltaTime, 0, 0);
+			if (mountain.transform.localPosition.x > 380) {
+				mountain.transform.localPosition = new Vector3 (380, 77, 0);
+			}
+			sky.transform.Translate (-0.1f * Time.deltaTime, 0, 0);
+			if (sky.transform.localPosition.x < -250) {
+				sky.transform.localPosition = new Vector3 (380, 270, 0);
+			}
 		}
 	}
 	
