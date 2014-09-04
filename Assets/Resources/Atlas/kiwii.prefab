@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0008_n3-on
-    x: 1677
+    x: 1837
     y: 371
     width: 79
     height: 79
@@ -160,7 +160,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 0011_n2-off
     x: 1605
-    y: 81
+    y: 241
     width: 70
     height: 79
     borderLeft: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0012_n1-on
-    x: 1837
+    x: 1677
     y: 371
     width: 79
     height: 79
@@ -186,7 +186,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 0013_n1-off
     x: 1605
-    y: 241
+    y: 81
     width: 70
     height: 79
     borderLeft: 0
@@ -237,19 +237,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0020_bin-on
-    x: 1025
-    y: 23
-    width: 308
-    height: 54
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 0021_bin-off
     x: 1499
     y: 451
     width: 308
@@ -262,9 +249,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: 0021_bin-off
+    x: 1025
+    y: 23
+    width: 308
+    height: 54
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: 0022_reset-on
-    x: 1739
-    y: 542
+    x: 1350
+    y: 208
     width: 148
     height: 148
     borderLeft: 0
@@ -276,19 +276,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0023_reset-off
-    x: 1888
-    y: 542
-    width: 148
-    height: 148
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 0024_play-stop
     x: 1350
     y: 357
     width: 148
@@ -301,9 +288,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: 0024_play-stop
+    x: 1739
+    y: 542
+    width: 148
+    height: 148
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: 0025_play-off
-    x: 1350
-    y: 208
+    x: 1888
+    y: 542
     width: 148
     height: 148
     borderLeft: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 0030_repeat-
     x: 1499
-    y: 345
+    y: 239
     width: 105
     height: 105
     borderLeft: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 0031_slide
     x: 1499
-    y: 239
+    y: 133
     width: 105
     height: 105
     borderLeft: 0
@@ -367,19 +367,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 0032_jump
-    x: 1350
-    y: 102
-    width: 105
-    height: 105
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: 0033_l
     x: 1499
     y: 27
     width: 105
@@ -392,9 +379,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: 0033_l
+    x: 1350
+    y: 102
+    width: 105
+    height: 105
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: 0034_r
     x: 1499
-    y: 133
+    y: 345
     width: 105
     height: 105
     borderLeft: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 1bt
-    x: 1677
+    x: 1759
     y: 295
     width: 81
     height: 75
@@ -471,8 +471,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 1bt_on
-    x: 1677
-    y: 233
+    x: 1923
+    y: 309
     width: 81
     height: 61
     borderLeft: 0
@@ -510,7 +510,7 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 3bt
-    x: 1759
+    x: 1677
     y: 295
     width: 81
     height: 75
@@ -523,8 +523,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: 3bt_on
-    x: 1923
-    y: 309
+    x: 1677
+    y: 233
     width: 81
     height: 61
     borderLeft: 0
@@ -536,7 +536,7 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 0
   - name: black
-    x: 0
+    x: 1025
     y: 1472
     width: 1024
     height: 576
@@ -576,7 +576,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: intro
     x: 0
-    y: 318
+    y: 895
     width: 1024
     height: 576
     borderLeft: 0
@@ -667,7 +667,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: loding
     x: 1025
-    y: 1472
+    y: 895
     width: 1024
     height: 576
     borderLeft: 0
@@ -679,8 +679,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: loding2
-    x: 1025
-    y: 895
+    x: 0
+    y: 1472
     width: 1024
     height: 576
     borderLeft: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: st
     x: 0
-    y: 895
+    y: 318
     width: 1024
     height: 576
     borderLeft: 0
