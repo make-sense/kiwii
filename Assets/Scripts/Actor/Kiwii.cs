@@ -6,7 +6,7 @@ public class Kiwii : Actor {
 	public float _speed = 1.0f;
 	private string type;
 	private bool direction = true;
-	private float srcPos, dstPos;
+	private float srcPos, dstPos, halfPos;
 	private GameObject mountain, sky;
 	private GameObject startBtn, stopBtn;
 	public float _totalFeather = 0;
@@ -44,6 +44,7 @@ public class Kiwii : Actor {
 		{
 			dstPos = srcPos - 150;
 		}
+		halfPos = (dstPos - srcPos)/2 + srcPos;
 		type = "jump";
 	}
 	
@@ -214,29 +215,43 @@ public class Kiwii : Actor {
 		case "jump":
 			if (direction) 
 			{
-				if(srcPos < dstPos)
+				if(srcPos < halfPos)
 				{
-					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 5 * Time.deltaTime, 0);
+					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 1.7f * 3.14f * Time.deltaTime, 0);
 					srcPos = transform.localPosition.x;
-					BackgroundMove();
+					Debug.Log("up");
 				}
-				else
+				else if(halfPos < srcPos && srcPos < dstPos)
+				{
+					transform.Translate (_speed * 2 * Time.deltaTime, -(_speed * 0.2f * 3.14f *Time.deltaTime), 0);
+					srcPos = transform.localPosition.x;
+					Debug.Log("down");
+				}
+				else if(srcPos >= dstPos)
 				{
 					type = "go";
 				}
+				BackgroundMove();
 			}
 			else if(!direction)
 			{
-				if(srcPos > dstPos)
+				if(srcPos > halfPos)
 				{
-					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 5 * Time.deltaTime, 0);
+					transform.Translate (_speed * 2 * Time.deltaTime, _speed * 1.7f * 3.14f * Time.deltaTime, 0);
 					srcPos = transform.localPosition.x;
-					BackgroundMove();
+					Debug.Log("up");
 				}
-				else
+				else if(halfPos > srcPos && srcPos > dstPos)
+				{
+					transform.Translate (_speed * 2 * Time.deltaTime, -(_speed * 0.2f * 3.14f * Time.deltaTime), 0);
+					srcPos = transform.localPosition.x;
+					Debug.Log("down");
+				}
+				else if(srcPos <= dstPos)
 				{
 					type = "back";
 				}
+				BackgroundMove();
 			}
 			break;
 		case "slide":
