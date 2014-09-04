@@ -9,6 +9,8 @@ public class Kiwii : Actor {
 	private float srcPos, dstPos;
 	private GameObject mountain, sky;
 	private GameObject startBtn, stopBtn;
+	public float _totalFeather = 0;
+	private float currentFeather = 0;
 	
 	public void Go ()
 	{
@@ -127,8 +129,12 @@ public class Kiwii : Actor {
 			break;
 		case "Feather":
 			Destroy(other.gameObject);
+			currentFeather++;
 			Debug.Log (other.gameObject.tag);
-			Application.LoadLevel("05_lv2");
+			if(_totalFeather == currentFeather)
+			{
+				Application.LoadLevel("03_stage");
+			}
 			break;
 		}
 	}

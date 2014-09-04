@@ -153,6 +153,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 386098092}
@@ -580,7 +584,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1579,7 +1583,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 45
   mHeight: 47
-  mDepth: 18
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -1952,7 +1956,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -2285,6 +2289,10 @@ Prefab:
       propertyPath: m_Name
       value: Feather1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
   m_RootGameObject: {fileID: 286760468}
@@ -2364,7 +2372,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -2672,6 +2680,7 @@ MonoBehaviour:
   ActorName: 
   Pos: {x: 0, y: 0, z: 0}
   _speed: .5
+  _totalFeather: 2
 --- !u!114 &541224792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2746,7 +2755,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 42
   mHeight: 76
-  mDepth: 16
+  mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -2974,7 +2983,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -3073,6 +3082,10 @@ Prefab:
     - target: {fileID: 400000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
+      propertyPath: mDepth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8acdaf99de3b0974aaad7dcdfe12f9e7, type: 2}
@@ -3962,6 +3975,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 1693764232}
@@ -4587,7 +4604,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 45
   mHeight: 47
-  mDepth: 18
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -4698,6 +4715,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 2107511628}
@@ -4777,7 +4798,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -4952,7 +4973,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -5275,6 +5296,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 1299707430}
@@ -5549,6 +5574,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 441636421}
@@ -5797,7 +5826,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -6398,6 +6427,10 @@ Prefab:
       propertyPath: aspectRatio
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400004, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
     - {fileID: 5400000, guid: ec96c1ae569510044a07ef278f335a80, type: 2}
@@ -6664,6 +6697,10 @@ Prefab:
     - target: {fileID: 400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.00007999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
@@ -7154,6 +7191,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 2085108380}
@@ -7225,6 +7266,10 @@ Prefab:
     - target: {fileID: 6100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_Size.y
       value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
@@ -7517,7 +7562,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -7693,7 +7738,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -8526,6 +8571,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 1086283037}
@@ -8831,6 +8880,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.00007999
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
   m_RootGameObject: {fileID: 573377983}
@@ -8964,7 +9017,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -9350,7 +9403,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 58
   mHeight: 58
-  mDepth: 17
+  mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
@@ -9583,6 +9636,10 @@ Prefab:
     - target: {fileID: 400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.00007999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
+      propertyPath: mDepth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee7707d014932654e99c14ae9a103232, type: 2}
