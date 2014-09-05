@@ -335,9 +335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5ecb5660b11414fb042fb826e03b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scalingStyle: 0
-  manualHeight: 720
-  minimumHeight: 320
+  scalingStyle: 1
+  manualHeight: 576
+  minimumHeight: 576
   maximumHeight: 1536
   adjustByDPI: 0
   shrinkPortraitUI: 0

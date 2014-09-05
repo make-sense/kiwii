@@ -6,11 +6,11 @@ PlayerSettings:
   serializedVersion: 3
   AndroidProfiler: 0
   defaultScreenOrientation: 4
-  targetDevice: 2
+  targetDevice: 0
   targetGlesGraphics: 1
-  targetResolution: 0
+  targetResolution: 6
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: OnAirSoft Co.,Ltd.
   productName: kiwii
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -64,7 +64,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: cc.makesense.kiwii
+  iPhoneBundleIdentifier: com.onairsoft.kiwii
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: 1ea0ea8e62da75445b7dc1f047d3f61a
